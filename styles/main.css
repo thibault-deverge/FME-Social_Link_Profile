@@ -1,0 +1,49 @@
+:root {
+	/* TYPOGRAPHY */
+	--font-family-primary: 'Inter', sans-serif;
+	--font-size-large: 1.5rem;
+	--font-size-small: 0.875rem;
+
+	/* SPACING */
+	--spacing-xxs: 0.25rem;
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 0.75rem;
+	--spacing-md: 1rem;
+	--spacing-lg: 1.5rem;
+	--spacing-xl: 2.5rem;
+
+	/* COLORS */
+	--color-gray-900: #141414;
+	--color-gray-800: #1f1f1f;
+	--color-gray-700: #333;
+	--color-green: #c4f82a;
+	--color-white: #fff;
+
+	/* MEDIA QUERIES */
+	--media-query-medium: 62.5rem;
+	--media-query-small: 30rem;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-size: var(--font-size-small);
+	color: var(--color-white);
+	background-color: var(--color-gray-900);
+	min-height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	width: 24rem;
+
+	@media (max-width: 62.5rem) {
+		width: 28.5rem;
+	}
+
+	@media (max-width: 30rem) {
+		width: 20.5rem;
+	}
+}
